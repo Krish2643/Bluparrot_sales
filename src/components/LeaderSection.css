@@ -1,0 +1,257 @@
+.leaders-section {
+  font-family: Arial, sans-serif;
+}
+
+.leaders-title {
+  font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Gothic A1';
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.profile-card {
+  position: relative;
+}
+
+.profile-image-left {
+  width: 150px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid lightgray;
+}
+
+.profile-image-right {
+  width: 150px;
+  height: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid lightgray;
+}
+
+.label-left, .label-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.label-left {
+  left: -120px; /* Adjust positioning */
+}
+
+.label-right {
+  right: -120px; /* Adjust positioning */
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: white;
+  padding: 4px 8px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.profile-title {
+  font-size: 16px;
+  color: gray;
+  margin-left: 2rem;
+}
+.leaders-content{
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.leaders-description h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.leaders-description{
+  margin-left:150px ;
+}
+.leaders-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.leaders-profiles{
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    margin-right: -150px;
+    margin-left: 10px;
+    padding: 10px 0px 100px 0px;
+}
+.about-container{
+  display: flex;
+  /* justify-content: flex-end; */
+  width: 100%;
+  /* background-color: rebeccapurple; */
+}
+.about-page{
+  /* width: 821px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  /* margin-left: 440px; */
+  /* background-color: yellow; */
+  padding-left: 1rem;
+}
+.nitin{
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.aarushi{
+  margin-top: -150px;
+}
+.leaders-section .leaders-section{
+  background-color:#F9F9F9 ;
+}
+.leaders-description{
+  max-width: 600px;
+}
+.nitin-image{
+  width: 240px;
+    border-radius: 10px;
+    margin-right: 10px;
+    height: 260px;
+}
+.aarushi-image{
+  width: 240px;
+    border-radius: 10px;
+    margin-right: -30px;
+    height: 260px;
+}
+.aarushi-info{
+  margin-top: 180px;
+    display: flex;
+    flex-direction: row;
+    margin-right: -20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .leaders-content {
+    display: flex;
+    gap: 50px;
+    /* justify-content: space-around; */
+    margin-top: 50px;
+    flex-direction: column;
+}
+.leaders-profiles {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin-right: 0px;
+  margin-left: 10px;
+  padding: 10px 0px 100px 0px;
+}
+  .about-container{
+    justify-content: center;
+    .about-page{
+      width: unset;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-left: unset;
+    }
+  }
+  .profile-card{
+  margin-right: 0px;
+  display: flex;
+    align-items: center;
+  margin-left: 0px;
+  margin-top: 0px;
+  
+
+  }
+  .aarushi{
+    margin-left: -180px;
+    margin-bottom: -180px;
+
+  }
+  .nitin{
+    margin-right: -180px;
+  }
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .leaders-section{
+    width: unset;
+    margin-right: unset;
+    
+  }
+  .about-container {
+      justify-content: center;
+      padding: 2rem;
+      
+  }
+  .leaders-description {
+    margin-left: unset;
+    max-width: unset;
+    padding: 2rem;
+}
+  
+}
+@media screen and (max-width:700px) {
+  .leaders-profiles{
+    margin-right: 80px;
+  }
+}
+@media screen and (max-width:624px) {
+  .leaders-profiles{
+    margin-right: 110px;
+  }
+}
+@media screen and (max-width:600px) {
+  .leaders-profiles{
+    margin-right: 110px;
+  }
+  .aarushi-image {
+    width: 140px;
+    /* border-radius: 10px; */
+    /* margin-right: -30px; */
+    height: 170px;
+    margin-bottom: 20px;
+}
+.aarushi-info {
+  margin-top: 120px;
+  
+  margin-right: -20px;
+}
+.nitin-image {
+  width: 140px;
+  margin-top: -40px;
+  height: 170px;
+}
+.aarushi {
+  margin-top: -50px;
+  
+}
+}
+
+@media screen and (max-width: 500px) {
+  .leaders-profiles {
+    
+    gap: 60px;
+}
+  .profile-name{
+    font-size: 14px;
+    max-width: 130px;
+  }
+}

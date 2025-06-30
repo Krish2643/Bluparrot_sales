@@ -1,0 +1,329 @@
+.Growth_Marketing-container {
+
+  p {
+    margin: 0rem;
+    font-weight: 500;
+  }
+
+  .Growth_Marketing_banner {
+    background-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.1)),
+      url("../assets/Images/Growth_marketing_background_img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding-left: 8rem;
+    padding-top: 10rem;
+    /* min-height: 530px; */
+
+    .Growth_Marketing-banner-first-line {
+      font-family: "Gothic A1", sans-serif;
+      font-weight: 400;
+      color: #f4f4f4;
+      padding-bottom: 1rem;
+      /* border-bottom: 1px solid rgb(164, 162, 162); */
+    }
+
+    .Growth_Marketing-banner-heading {
+      margin-top: 3rem;
+      padding-bottom: 6rem;
+      max-width: 500px;
+
+      h1 {
+        font-size: 36px;
+        font-weight: 600;
+        max-width: 500px;
+        color: #f4f4f4;
+        font-family: "Gothic A1", sans-serif;
+        line-height: 45px;
+      }
+
+      p {
+        font-size: 20px;
+        color: #d3d3d3;
+        line-height: 28px;
+        font-family: "Hind Madurai", sans-serif;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .Growth_Marketing-2nd-container {
+    padding: 2rem 0rem;
+    font-family: "Hind Madurai", sans-serif;
+    color: #023047;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+
+    .Growth_Marketing-2nd-container-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 1rem;
+
+      h1 {
+        max-width: 900px;
+        font-size: 24px;
+      }
+
+    }
+  }
+
+  .Growth_Marketing-3rd-container {
+    background-color: #9ED6E63D;
+    max-width: 1100px;
+    padding-left: 8rem;
+    padding-top: 2rem;
+    position: relative;
+    height: 1060px;
+    font-family: "Hind Madurai", sans-serif;
+    color: #023047;
+    letter-spacing: 0.5px;
+
+    .Growth_Marketing-3rd-container-title {
+      max-width: 800px;
+      font-size: 20px;
+      position: relative;
+
+      p:nth-child(1) {
+        padding-bottom: 1rem;
+      }
+    }
+
+    .Growth_Marketing-3rd-container-cards {
+      position: absolute;
+      left: 8rem;
+      right: -5rem;
+      margin-top: 2rem;
+
+      .Growth_Marketing-3rd-container-card {
+        border-radius: 5px;
+        color: #023047;
+        border: 2px solid black;
+        margin-bottom: 1rem;
+        background-color: white;
+        padding: 1rem 2rem;
+
+        p:nth-child(1) {
+          text-align: start;
+          font-weight: 600;
+          font-size: 20px;
+        }
+
+
+      }
+    }
+  }
+
+  .Growth_Marketing-4th {
+    background-image: url("../assets/Images/vartical-background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Gothic A1", sans-serif;
+    margin-top: 2rem;
+    padding-top: 4rem;
+    padding-left: 5rem;
+    padding-right: 8rem;
+    position: relative;
+
+    .Growth_Marketing-4th-cards-banner {
+      position: absolute;
+      right: 10px;
+      top: 50px;
+      width: 500px;
+      height: 300px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    .Growth_Marketing-4th-heading {
+      margin-top: 12rem;
+      font-weight: 600;
+      font-size: 16px;
+      color: #023047;
+      padding-left: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .Growth_Marketing-4th-cards {
+      background-color: white;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      padding: 2rem 4rem;
+      display: flex;
+      gap: 5rem;
+      margin-bottom: 20px;
+
+      .Growth_Marketing-4th-card {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+
+        /* background-color: aqua; */
+        p:nth-child(1) {
+          font-weight: 700;
+          font-size: 20px;
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1205px) {
+  .Growth_Marketing-3rd-container-cards {
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .Growth_Marketing-3rd-container {
+    height: auto !important;
+    padding: 1rem !important;
+    text-align: justify;
+  }
+
+  .Growth_Marketing-3rd-container-title {
+    padding: 10px;
+  }
+
+  .Growth_Marketing-container {
+    & .Growth_Marketing-4th {
+.Growth_Marketing-4th-cards-banner {
+  position: relative !important;
+  right: unset !important;
+  top: unset !important;
+  width: unset;
+  /* height: 300px; */
+}
+  }
+}
+
+.Growth_Marketing-container{
+.Growth_Marketing-4th {
+
+  padding-top: 0px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+
+}
+}
+.Growth_Marketing-container {
+  & .Growth_Marketing-4th {
+.Growth_Marketing-4th-heading {
+  margin-top: 4rem;
+}
+  }
+}
+}
+@media screen and (max-width: 940px) {
+  .Growth_Marketing-container {
+    & .Growth_Marketing-4th {
+        .Growth_Marketing-4th-cards {
+            
+            flex-direction: column;
+            display: flex;
+            gap: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
+}
+@media (max-width: 700px) {
+  .Growth_Marketing-container {
+    & .Growth_Marketing_banner {
+        .Growth_Marketing-banner-first-line {
+
+          font-size: 13px; 
+          font-weight: 300;
+            
+            /* border-bottom: 1px solid rgb(164, 162, 162); */
+        }
+    }
+}
+.Growth_Marketing-container {
+  & .Growth_Marketing_banner {
+      & .Growth_Marketing-banner-heading {
+          h1 {
+              font-size: 26px;
+              font-weight: 700;
+              
+          }
+      }
+  }
+}
+.Growth_Marketing-container {
+  & .Growth_Marketing_banner {
+      & .Growth_Marketing-banner-heading {
+          p {
+              font-size: 14px;
+              
+              font-weight: 500;
+          }
+      }
+  }
+}
+.Growth_Marketing-container {
+  & .Growth_Marketing-2nd-container {
+      & .Growth_Marketing-2nd-container-title {
+          h1 {
+              max-width: 600px;
+              font-size: 14px;
+          }
+      }
+  }
+}
+.Growth_Marketing-container {
+  p {
+      font-size: 16px;
+      font-weight: 400;
+  }
+}
+.Growth_Marketing-container {
+        & .Growth_Marketing-4th {
+            .Growth_Marketing-4th-heading {
+                font-size: 14px;
+            }
+        }
+    }
+    .Growth_Marketing-container {
+      & .Growth_Marketing-4th {
+          .Growth_Marketing-4th-cards {
+              
+              padding: 2rem 2rem;
+              
+          }
+      }
+  }
+}
+@media screen and (max-width: 640px) {
+  .Growth_Marketing-4th-cards-banner {
+    padding-left: 4rem !important;
+  }
+  .Growth_Marketing-container {
+    & .Growth_Marketing-4th {
+  .Growth_Marketing-4th-heading {
+    font-size: 14px;
+  }
+    }
+  }
+  .Growth_Marketing-container {
+    .Growth_Marketing_banner {
+      padding-left: 3rem;
+      padding-right: 3rem;
+      
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+    }}
+}

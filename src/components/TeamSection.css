@@ -1,0 +1,235 @@
+/* Base Styles */
+.team-section {
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  background-color: #f9f9f900;
+  margin-top: 32px;
+  .Advisory{
+    display: flex;
+        gap: 10;
+        flex-direction: row;
+        justify-content: left;
+        row-gap: 10px;
+        gap: 10px;
+        margin: auto;
+  }
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 60px;
+  justify-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.team-card {
+  border-radius: 10px;
+  text-align: left;
+  width: 270px;
+  height: 330px;
+  background-color: #F9F9F9;
+  margin: 10px;
+}
+
+.team-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 0px 15px 15px 15px;
+}
+
+.team-card h3 {
+  color: #023047;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #F1F1F1;
+  padding: 4px 12px;
+  border-radius: 15px;
+  border: 1px solid #023047;
+  width: fit-content;
+}
+
+.team-card p {
+  margin: 0;
+  color: #555;
+}
+
+/* Specific Section Styles */
+.advisory-team h2 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 7rem;
+  padding-top: 50px;
+}
+
+.department-heads h2 {
+  padding-top: 50px;
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  margin-left: 7rem;
+}
+
+.technology-team h2 {
+  padding-top: 50px;
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 7rem;
+  font-weight: 600;
+}
+.Social_media h2{
+  padding-top: 50px;
+  color: #000000;
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-left: 7rem;
+  font-weight: 600;
+}
+.department-heads{
+  margin-top: 100px;
+  background-color: #F9F9F9;
+  /* background-color: yellow; */
+  width: 100%;
+  .team-grid{
+    height: 420px;
+  }
+}
+.technology-team{
+  margin-top: 100px;
+  background-color: #F9F9F9;
+  width: 100%;
+  height: auto;
+  .team-grid{
+    height: auto;
+  }
+}
+.advisory-team{
+  background-color: #F9F9F9;
+  width: 100%;
+  .team-card{
+    height: 420px;
+    
+  }
+}
+/* You can target specific team cards for individual styling if needed */
+@media screen and (max-width: 1280px) {
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 60px;
+    justify-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .team-section {
+    .Advisory {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 60px;
+      justify-items: center;
+      width: 80%;
+      margin: 0 auto;
+    }
+}
+  .department-heads{
+    position: relative;
+    margin-top: 100px;
+    background-color: #F9F9F9;
+    width: 100%;
+    .team-grid{
+      height: auto;
+    }
+  }
+  .technology-team{
+    position: relative;
+    margin-top: 100px;
+    background-color: #F9F9F9;
+    width: 100%;
+    height: auto;
+       .team-grid{
+      height: auto;
+    }
+  }
+  .advisory-team{
+    background-color: #F9F9F9;
+    width: 100%;
+    .team-card{
+      height: auto;
+      
+    }
+  }
+  
+}
+@media screen and (max-width:700px) {
+  .team-section {
+    .Advisory {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 10px;
+        width: 100%; 
+    }
+}
+.team-card {
+  
+  width: unset;
+  
+}
+}
+@media screen and (max-width:600px) {
+  .team-grid {
+    
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+   
+}
+  .team-card {
+    border-radius: 10px;
+    text-align: left;
+    width: 150px;
+    height:auto;
+    background-color: #F9F9F9;
+    margin: 10px;
+}
+  .team-card img {
+    width: 151px;
+    height: 150px;
+}
+  .team-grid{
+    width: 100%;
+    gap: 20px;
+  }
+  .team-card h3{
+    font-size: 14px;
+    padding: auto ;
+  }
+  .department-heads h2 {
+    
+    color: #000000;
+    font-size: 16px;
+    margin-left: 1rem;
+}
+.technology-team h2{
+  margin-left: 1rem;
+  font-size: 16px;
+}
+.Social_media h2{
+  margin-left: 1rem;
+  font-size: 16px;
+}
+.team-section {
+  .Advisory {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      width: 100%; 
+  }
+  .advisory-team h2{
+    margin-left: 1rem;
+  font-size: 16px;
+  }
+}
+}

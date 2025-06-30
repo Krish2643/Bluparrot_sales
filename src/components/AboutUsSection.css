@@ -1,0 +1,119 @@
+.about-us-section {
+    padding: 50px;
+    background-color: #f8f9fa;
+    text-align: center;
+    height: 550px;
+  }
+  
+  .about-us-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us-section p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .we_are {
+    margin-top: 100px;
+    margin-left: '200px';
+    /* background-color: yellow; */
+    
+  }
+  .we_are h1{
+    width: 450px;
+    color: #FD9E02;
+    font-weight: bolder;
+    text-align: start;
+    font-size: 96px;
+  }
+  .split-text {
+    text-align: center; /* Center the text horizontally if needed */
+  }
+  
+  .line-one {
+    display: block; /* Make sure it occupies the full width */
+  }
+  
+  .line-two {
+    display: block; /* Make sure it occupies the full width */
+  }
+  .about-1st-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.image-container{
+  margin-top: 70px;
+    height: 500px;
+}
+.image-us{
+  height: 500px;
+}
+@media screen and (max-width:1080px) {
+  .about-us-section{
+    height: 900px;
+  }
+  .we_are {
+    margin-top: 0px;
+    padding-left: 7rem;
+}
+  .about-1st-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+}
+@media screen and (max-width:700px) {
+  .about-us-section {
+    height: 750px;
+}
+  .image-us{
+    height: 400px;
+  }
+  .we_are {
+    margin-top: 0px;
+    padding-left: 2rem;
+}
+.line-one{
+  font-size: 66px;
+}
+.line-two{
+  font-size: 66px;
+}
+}
+@media screen and (max-width:560px) {
+  .about-us-section {
+    height: 600px;
+}
+  .image-us{
+    height: 300px;
+  }
+  .we_are {
+    margin-top: 0px;
+    padding-left: 2rem;
+}
+.line-one{
+  font-size: 40px;
+}
+.line-two{
+  font-size: 40px;
+}
+}
+@media screen and (max-width:450px) {
+  .image-container {
+    margin-top: 0px;
+    height: 500px;
+}
+  .about-us-section {
+    height: 550px;
+}
+  .image-us{
+    height: 250px;
+  }
+  .we_are {
+    margin-top: 70px;
+    padding-left: 2rem;
+}
+}
