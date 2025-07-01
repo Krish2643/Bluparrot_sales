@@ -44,11 +44,11 @@ const LatestUpdatesandBlogs = () => {
             <div className={styles.cardContent}>
               <h3>{card.title}</h3>
               <p>{card.description}</p>
-              <Link to={`/blogs/${card.id}`}>
+              {/* <Link to={`/blogs/${card.id}`}> */}
                 <button className={styles.exploreButton}>
                   Explore Now →
                 </button>
-              </Link>
+              {/* </Link> */}
             </div>
           </div>
         ))}
