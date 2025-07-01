@@ -43,7 +43,7 @@ import { useNavigate } from "react-router-dom";
 const coreBusinessData = [
   {
     id:1,
-    title: "Digital Transformation, Data Science & AI",
+    title: "Legal AI",
     description: [
       "We offer expert consulting solutions in Data Science and Artificial Intelligence across all industries, delivering customized solutions to address client needs and maximize ROI. " ,"Our portfolio includes over 100+ AI models and products, adaptable to specific client requirements. "
     ],
@@ -57,7 +57,7 @@ const coreBusinessData = [
   },
   {
     id:9,
-    title: "Data as a Service ",
+    title: "Inferred Theorem",
     description: [
       "We deliver global open-source datasets and publicly available data to train AI models, analyze trends, and extract insights for strategic decision-making.","Our OSINT services enable sentiment analysis, pattern recognition, and deep analysis of open-source media, ensuring GDPR compliance throughout. ",
       
@@ -66,12 +66,12 @@ const coreBusinessData = [
     impact: "Empowering clients to enhance their marketing strategies and business decisions with data-driven insights.",
     path: "/Data_AI",
     icon: Data, // Replace with actual path,
-    link: [{name: "Inferred Theoerm", url: "http://130.250.171.74/"}, 
+    link: [{name: "Inferred Theorem", url: "http://130.250.171.74/"}, 
       ]
   },
   {
     id:7,
-    title: "Cloud Managed Services",
+    title: "World ESG Datalake",
     description: [
       "Our cloud-agnostic managed services span AWS, Azure, and GCP, providing expert cloud strategy, infrastructure management, 24/7 monitoring, security, and cost optimization tailored to your unique business needs. "
     ],
@@ -198,9 +198,6 @@ const Navbar2 = () => {
 
   const navigate = useNavigate();
 
-  const handleClick = (url) => {
-    navigate(url); 
-  };
 
  
   const totalSlides = Math.ceil(industries.length / itemsPerPage); // Calculate total number of slides
