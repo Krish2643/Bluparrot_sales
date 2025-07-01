@@ -82,7 +82,19 @@ const coreBusinessData = [
     link: [{name: "ESG Datalake", url: "https://www.worldesgdatalake.com"}, 
       ]
   },
-  
+  {
+    id:7,
+    title: "World ESG Datalake",
+    description: [
+      "Our cloud-agnostic managed services span AWS, Azure, and GCP, providing expert cloud strategy, infrastructure management, 24/7 monitoring, security, and cost optimization tailored to your unique business needs. "
+    ],
+    BackgroundImage: Cloude,
+    impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
+    path: "/Cloud_Services",
+    icon: CloudeIcon,
+    link: [{name: "ESG Datalake", url: "https://www.worldesgdatalake.com"}, 
+      ]
+  },
  
 ];
 const statsData = [
