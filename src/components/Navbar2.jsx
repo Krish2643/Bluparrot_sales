@@ -45,7 +45,7 @@ const coreBusinessData = [
     id:1,
     title: "Legal AI",
     description: [
-      "We offer expert consulting solutions in Data Science and Artificial Intelligence across all industries, delivering customized solutions to address client needs and maximize ROI. " ,"Our portfolio includes over 100+ AI models and products, adaptable to specific client requirements. "
+      "An AI-powered platform that streamlines legal document review by providing concise case summaries and enabling users to ask specific, case-related questions after uploading a file.", "An AI-driven tool that generates customized contracts based on user input, allowing interactive edits to specific clauses or terms to ensure the final document meets precise requirements."
     ],
     BackgroundImage: Digital,
     impact: "Enhancing customer experience, operational efficiency, decision-making, and internal processes with AI-driven real-time insights",
@@ -56,10 +56,10 @@ const coreBusinessData = [
       {name: "Contract Draft", url: "http://20.193.128.47:5000/"}]
   },
   {
-    id:9,
+    id:2,
     title: "Inferred Theorem",
     description: [
-      "We deliver global open-source datasets and publicly available data to train AI models, analyze trends, and extract insights for strategic decision-making.","Our OSINT services enable sentiment analysis, pattern recognition, and deep analysis of open-source media, ensuring GDPR compliance throughout. ",
+      "A property price prediction model estimates property values based on various factors like location, features, market trends, and images. It combines structured data, textual descriptions, and visual data to predict prices more accurately", `Username:test_user_1, password: Bluparrot123`
       
     ],
     BackgroundImage: Data_as,
@@ -70,10 +70,10 @@ const coreBusinessData = [
       ]
   },
   {
-    id:7,
+    id:3,
     title: "World ESG Datalake",
     description: [
-      "Our cloud-agnostic managed services span AWS, Azure, and GCP, providing expert cloud strategy, infrastructure management, 24/7 monitoring, security, and cost optimization tailored to your unique business needs. "
+      "We deliver global open-source datasets and publicly available data to train AI models, analyze trends, and extract insights for strategic decision-making.","Our OSINT services enable sentiment analysis, pattern recognition, and deep analysis of open-source media, ensuring GDPR compliance throughout. "
     ],
     BackgroundImage: Cloude,
     impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
@@ -84,15 +84,41 @@ const coreBusinessData = [
   },
   {
     id:7,
-    title: "World ESG Datalake",
+    title: "Shiftz",
     description: [
-      "Our cloud-agnostic managed services span AWS, Azure, and GCP, providing expert cloud strategy, infrastructure management, 24/7 monitoring, security, and cost optimization tailored to your unique business needs. "
+      "AI-Driven Recruitment Marketplace: Shiftz connects companies with a network of verified freelance recruiters, enabling faster and more efficient hiring through automated candidate screening, smart job matching, and integrated video interviews—all within a single platform.", "Flexible, Scalable Hiring Solution: Designed for startups and growing teams, Shiftz offers on-demand recruitment support, making it easy to scale hiring without the overhead of a full HR team."
     ],
     BackgroundImage: Cloude,
     impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
     path: "/Cloud_Services",
     icon: CloudeIcon,
-    link: [{name: "ESG Datalake", url: "https://www.worldesgdatalake.com"}, 
+    link: [{name: "Shiftz", url: "https://www.Shiftz.in"}, 
+      ]
+  },
+  {
+    id:8,
+    title: "BluSunday",
+    description: [
+      "Structured Role Management: The system streamlines project workflows by assigning clear roles—Admins manage access and templates, Managers handle task planning and team performance, while Team Members focus on execution.", "Productivity-Driven Features: Built-in KPIs, reusable templates, calendar integration, and activity tracking help improve accountability, reduce delays, and standardize project execution across teams."
+    ],
+    BackgroundImage: Cloude,
+    impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
+    path: "/Cloud_Services",
+    icon: CloudeIcon,
+    link: [{name: "Blusunday", url: "https://www.blusunday.com"}, 
+      ]
+  },
+  {
+    id:9,
+    title: "Social Listening Dashboard",
+    description: [
+      "Social media listening platform uses google and twitter api to fetch real time latest news and tweets for a specific keyword entered by the user for dubai region.", "Ai driven sentiment analysis, trending topics extraction and top influencers, hashtags,  along with Ai generated strategic insights; sentiment score with emotion of the tweet."
+    ],
+    BackgroundImage: Cloude,
+    impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
+    path: "/Cloud_Services",
+    icon: CloudeIcon,
+    link: [{name: "Dashboard", url: "https://www.worldesgdatalake.com"}, 
       ]
   },
  
@@ -303,7 +329,34 @@ const Navbar2 = () => {
 
       <div className="core-businesses">
         <h2>Our Products</h2>
-        <div className="business-grid">
+        <div className="business-cards-wrapper" >
+        {coreBusinessData?.map((business, index)=>(
+          <div key={index} className="business-card-containers" >
+            <div className="business-card-content"  >
+              <div className="business-card-header" >
+             <img src={Cube} alt="" />
+             <p className="heading" >{business?.title}</p>
+              </div>
+              <div className="business-card-points" > 
+                <ul>
+                  {business.description.map((item, ind)=> <li key={ind} >
+                    {item}
+                  </li>)}
+                </ul>
+                 </div>
+            </div>
+            <div className="business-card-links" > 
+               <p className="demo-link" >Demo Link</p>
+               <div className="links" >
+                
+                {business?.link?.map((item, ind)=> <div className="live-link" key={ind} ><p>{item.name}</p>  <a href={item?.url} target="_blank" >Link</a> </div> )}
+               </div>
+            </div>
+         </div>
+        ))}
+        </div>
+      
+        {/* <div className="business-grid">
           {coreBusinessData.map((business, index) => (
             <div style={{ backgroundImage: `url(${business.BackgroundImage})` }} key={index} className="business-card card-${business.id}`">
               <div className="business-title">
@@ -321,7 +374,6 @@ const Navbar2 = () => {
 
               <div className={`impact-section impact-section-${business.id}`}>
                 <h4>Demo Link</h4>
-                {/* <p>{business.impact}</p> */}
                 <div className="impact-section-links" >
                   {business?.link?.map((link, idx) => {
                     console.log(link, "link");
@@ -336,7 +388,8 @@ const Navbar2 = () => {
               </div>
             </div>
           ))}
-        </div>
+
+        </div> */}
       </div>
       <div className="blu-parrot-today">
         <h2 style={{ textAlign: 'center' }}>

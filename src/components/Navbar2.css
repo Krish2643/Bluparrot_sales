@@ -121,6 +121,79 @@ display: none;
   width:auto;
 }
 
+.business-cards-wrapper{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+.business-card-containers{
+  /* background-color: yellow; */
+  color: white;
+  width: 360px;
+  text-align: start;
+  p{
+    padding: 0;
+    margin: 0;
+  }
+  ul{
+    padding-left: 20px;
+    li{
+      margin-bottom: 10px;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .business-card-content{
+    padding: 18px;
+    height: 370px;
+    border-radius: 8px 8px 0 0;
+    background-image: url('./Images/Group_6.png');
+    background-color: gray;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    .business-card-header{
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      .heading{
+        font-size: 20px;
+      }
+      img{
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+  .business-card-links{
+    background-color: #FDB135;
+    font-size: 18px;
+    border-radius: 0px 0px 8px 8px;
+    height: 120px;
+    padding: 12px 18px;
+    .demo-link{
+      text-align: center;
+    }
+    .links{
+      margin-top: 10px;
+      .live-link{
+        display: flex;
+        padding: 0 12px;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        color: black;
+        span{
+          cursor: 'pointer'
+        }
+       
+      }
+    }
+  }
+}
+}
+
 .navbar-links li {
 position: relative;
 font-family: 'Gothic A1';
@@ -375,12 +448,12 @@ flex-direction: column;
 }
 
 .business-card {
-  background-color: #0a223900; /* Dark background color */
-  color: #fff; /* White text */
+  background-color: #0a223900;
+  color: #fff; 
   border-radius: 8px;
   padding: 20px;
   position: relative;
-  height: 470px; /* Adjust as needed */
+  height: 460px;
   background-repeat: no-repeat;
   width: 357px;
   background-size: cover;
