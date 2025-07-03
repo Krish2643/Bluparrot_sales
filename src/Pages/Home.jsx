@@ -8,7 +8,7 @@ const Home = ()=>{
     return(
         <div className="home-container">
         <Navbar2/>
-        <ContactSection/>
+        {/* <ContactSection/> */}
         <Footer/>
         </div>
     )

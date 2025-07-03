@@ -43,7 +43,7 @@ import { useNavigate } from "react-router-dom";
 const coreBusinessData = [
   {
     id:1,
-    title: "Legal AI",
+    title: "AI in Legal",
     description: [
       "An AI-powered platform that streamlines legal document review by providing concise case summaries and enabling users to ask specific, case-related questions after uploading a file.", "An AI-driven tool that generates customized contracts based on user input, allowing interactive edits to specific clauses or terms to ensure the final document meets precise requirements."
     ],
@@ -57,7 +57,7 @@ const coreBusinessData = [
   },
   {
     id:2,
-    title: "Inferred Theorem",
+    title: "AI in Real Estate",
     description: [
       "A property price prediction model estimates property values based on various factors like location, features, market trends, and images. It combines structured data, textual descriptions, and visual data to predict prices more accurately", `Username:test_user_1, password: Bluparrot123`
       
@@ -71,7 +71,7 @@ const coreBusinessData = [
   },
   {
     id:3,
-    title: "World ESG Datalake",
+    title: "AI in ESG",
     description: [
       "We deliver global open-source datasets and publicly available data to train AI models, analyze trends, and extract insights for strategic decision-making.","Our OSINT services enable sentiment analysis, pattern recognition, and deep analysis of open-source media, ensuring GDPR compliance throughout. "
     ],
@@ -84,7 +84,7 @@ const coreBusinessData = [
   },
   {
     id:7,
-    title: "Shiftz",
+    title: "AI in Recruitment",
     description: [
       "AI-Driven Recruitment Marketplace: Shiftz connects companies with a network of verified freelance recruiters, enabling faster and more efficient hiring through automated candidate screening, smart job matching, and integrated video interviews—all within a single platform.", "Flexible, Scalable Hiring Solution: Designed for startups and growing teams, Shiftz offers on-demand recruitment support, making it easy to scale hiring without the overhead of a full HR team."
     ],
@@ -97,7 +97,7 @@ const coreBusinessData = [
   },
   {
     id:8,
-    title: "BluSunday",
+    title: "AI in Operations",
     description: [
       "Structured Role Management: The system streamlines project workflows by assigning clear roles—Admins manage access and templates, Managers handle task planning and team performance, while Team Members focus on execution.", "Productivity-Driven Features: Built-in KPIs, reusable templates, calendar integration, and activity tracking help improve accountability, reduce delays, and standardize project execution across teams."
     ],
@@ -110,7 +110,7 @@ const coreBusinessData = [
   },
   {
     id:9,
-    title: "Social Listening Dashboard",
+    title: "AI in Open Source Intelligence",
     description: [
       "Social media listening platform uses google and twitter api to fetch real time latest news and tweets for a specific keyword entered by the user for dubai region.", "Ai driven sentiment analysis, trending topics extraction and top influencers, hashtags,  along with Ai generated strategic insights; sentiment score with emotion of the tweet."
     ],
@@ -120,6 +120,45 @@ const coreBusinessData = [
     icon: CloudeIcon,
     link: [{name: "Dashboard", url: "http://172.178.60.98:8030/"}, 
       ]
+  },
+  {
+    id:10,
+    title: "AI in Recruitment",
+    description: [
+      "AI-powered recruitment system that automates candidate-job matching using vector search (with rule-based scoring), semantic skill extraction, and multi-factor scoring to deliver highly relevant talent recommendations in real time.", "End-to-end platform integrating resume parsing, intelligent job description generation, and percentile-based candidate ranking, designed to streamline hiring workflows and optimize recruiter efficiency at scale."
+    ],
+    BackgroundImage: Cloude,
+    impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
+    path: "/Cloud_Services",
+    icon: CloudeIcon,
+    link: [{name: "Dashboard", url: "http://172.178.60.98:8030/"}, 
+      ]
+  },
+  {
+    id:9,
+    title: "AI in Air Quality",
+    description: [
+      "Data Pipeline and SQL Integration: The air quality data, along with pollutant levels, is extracted from Excel files and automatically pushed into a SQL database through an ETL pipeline. This ensures the data is cleaned, structured, and stored efficiently for querying and analysis.", "UserName: admin@uae.gov, password: Admin@123"
+    ],
+    BackgroundImage: Cloude,
+    impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
+    path: "/Cloud_Services",
+    icon: CloudeIcon,
+    link: [{name: "MOCCAE", url: "https://dashboard-uae.netlify.app/"}, 
+      ]
+  },
+  {
+    id:9,
+    title: "Kareers",
+    description: [
+      "IInternship and Scholarship Applications:Kareer offers a centralized platform for students to find and apply for internships and scholarships. Smart filters and personalized recommendations help match opportunities to their skills and goals.", "Mentorship and Guidance: Students can connect with industry professionals for one-on-one mentorship. This provides career advice, networking support, and insights to make better career decisions."
+    ],
+    BackgroundImage: Cloude,
+    impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
+    path: "/Cloud_Services",
+    icon: CloudeIcon,
+    // link: [{name: "Dashboard", url: "http://172.178.60.98:8030/"}, 
+    //   ]
   },
  
 ];
@@ -328,7 +367,7 @@ const Navbar2 = () => {
       </div>
 
       <div className="core-businesses">
-        <h2>Our Products</h2>
+        <h2>Industry-Specific AI Development</h2>
         <div className="business-cards-wrapper" >
         {coreBusinessData?.map((business, index)=>(
           <div key={index} className="business-card-containers" >
@@ -404,36 +443,7 @@ const Navbar2 = () => {
           ))}
         </div>
       </div>
-      <div className="industries-impact-container">
-        <div className="Button-container">
-          <h2 className="section-title">Industries Implementations and their Impact</h2>
-          <div>
-            <button onClick={prevSlide} className="slider-btn left" disabled={isAnimating}>
-              &#8249;
-            </button>
-            <button onClick={nextSlide} className="slider-btn right" disabled={isAnimating}>
-              &#8250;
-            </button>
-          </div>
-        </div>
 
-        <div className={`industries-cards ${animationClass}`}>
-      <Slider {...settings}>
-        {industries.map((industry, index) => (
-          <div key={index} className={`industry-card ${industry.title}`}>
-            <div className="icon">
-              <div className="icon-div">
-                <img src={industry.icon} alt={industry.title} loading="lazy" />
-              </div>
-            </div>
-            <h3>{industry.title}</h3>
-            <p>{industry.description}</p>
-            <p className="industry-data">{industry.description1}</p>
-          </div>
-        ))}
-      </Slider>
-    </div>
-      </div>
 
       <div className="client-partners-gap">
         <h3 className="clients-partners-title">Clients & Partners</h3>
@@ -445,46 +455,8 @@ const Navbar2 = () => {
           ))}
         </Slider>
       </div>
-      {/* Latest Updates and Insights */}
-      <LatestUpdatesandBlogs/>
+      
       <div className="newsroom-container">
-        {/* Newsroom Section */}
-        {/* <Newsroom /> */}
-        {/* Services Section */}
-        <section className="services-section">
-          <div className="service-item">
-            <div  style={{ display: 'flex', flexDirection: 'row', fontSize: '48px', color: '#f0a623', paddingRight:'10px' }}>
-              <h3>01</h3>
-            </div>
-            <div className="service-01">
-              <h4>Dedicated Team</h4>
-              <p>
-              Our rockstar team of data scientists, AI specialists, full-stack developers, designers, DevOps experts, business analysts, and researchers deliver perfection with speed, ensuring your project's success.               </p>
-            </div>
-          </div>
-          <div className="service-item">
-            <div style={{ display: 'flex', flexDirection: 'row', fontSize: '48px', color: '#f0a623', paddingRight:'10px' }}>
-              <h3>02</h3>
-            </div>
-            <div className="service-02" >
-              <h4>Project-Based Expertise</h4>
-              <p>
-              We excel in scoping project requirements and conducting brainstorming sessions to provide innovative ideas for product design and services.               </p>
-            </div>
-
-          </div>
-          <div className="service-item">
-            <div style={{ display: 'flex', flexDirection: 'row', fontSize: '48px', color: '#f0a623', paddingRight:'10px' }}>
-              <h3>03</h3>
-            </div>
-            <div className="service-03" >
-              <h4>Marketing Support</h4>
-              <p>
-              We offer extended rollout and adoption plans, boosting your product’s ROI through increased team adoption and market success.               </p>
-            </div>
-          </div>
-        </section>
-
         {/* Contact Section */}
         <section className="Contact-section">
           <div style={{ padding: '0px', }} className="Contact-image">
