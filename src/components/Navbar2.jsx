@@ -359,7 +359,7 @@ const Navbar2 = () => {
         {/* Hero Section */}
         <section className="hero-section">
           <h1 >
-            Welcome to <span className="highlight">Blu</span><span style={{ color: '#FBC726' }}> Parrot</span> Ventures Demo Environment
+             <span className="highlight">Blu</span><span style={{ color: '#FBC726' }}> Parrot</span> AI Sandbox
           </h1>
           
           <p >We specialize in Data Science, Artificial Intelligence, Digital Transformation, ESG Innovations, IoT Automation, AI-Driven Performance Marketing, and Philanthropy Sector AI Solutions. </p>
