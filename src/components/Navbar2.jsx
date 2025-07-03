@@ -131,8 +131,8 @@ const coreBusinessData = [
     impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
     path: "/Cloud_Services",
     icon: CloudeIcon,
-    link: [{name: "Dashboard", url: "http://172.178.60.98:8030/"}, 
-      ]
+    // link: [{name: "Recruiit", url: ""}, 
+    //   ]
   },
   {
     id:9,
