@@ -429,8 +429,8 @@ const Navbar2 = () => {
             <div className="business-card-links" > 
                <p className="demo-link" >Demo Link</p>
                <div className="links" >
-                {business?.link?.map((item, ind)=> <div className="live-link" key={ind} ><p>{item.name}</p>  <a href={item?.url} className="arrow" target="_blank" > <FaArrowRightLong />
- </a> </div> )}
+                {business?.link?.map((item, ind)=> <a href={item?.url} target="_blank"  className="live-link" key={ind} ><p>{item.name}</p>  <p className="arrow"  > <FaArrowRightLong />
+ </p> </a> )}
                </div>
             </div>
          </div>
