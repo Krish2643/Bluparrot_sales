@@ -149,43 +149,63 @@ display: none;
     padding: 18px;
     height: 370px;
     border-radius: 8px 8px 0 0;
-    background-image: url('./Images/Group_6.png');
-    background-color: gray;
-    background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    background-color: #053145;
     .business-card-header{
       display: flex;
       align-items: center;
       gap: 14px;
       .heading{
         font-size: 20px;
+        color: #48b9dc;
+        font-weight: 500;
       }
       img{
         width: 50px;
         height: 50px;
       }
     }
+    .business-card-points{
+      color: rgb(241, 241, 241);
+    }
+    .credentails{
+      border: 5px solid #247093;
+      color: #48b9dc;
+      font-weight: 500;
+      border-style: dotted;
+      padding: 8px 15px;
+      display: flex;
+      border-radius: 10px;
+    }
   }
   .business-card-links{
     background-color: #FDB135;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 0px 0px 8px 8px;
-    height: 120px;
+    height: 150px;
     padding: 12px 18px;
+   
     .demo-link{
-      text-align: center;
+      color: black;
+      font-weight: 500;
     }
     .links{
       margin-top: 10px;
       .live-link{
         display: flex;
+        align-items: center;
         padding: 0 12px;
-        justify-content: space-between;
+        gap: 16px;
         margin-bottom: 10px;
-        color: black;
+        color: rgb(9, 129, 159);
+        font-weight: 500;
+        background-color: white;
+        padding: 6px 12px;
+        border-radius: 8px;
         span{
           cursor: 'pointer'
+        }
+        .arrow{
+          margin-top: 6px;
         }
        
       }

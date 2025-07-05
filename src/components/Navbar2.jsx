@@ -24,6 +24,8 @@ import Sports from "./Images/Sports.png";
 import Automobile from "./Images/Automobile.png";
 import Recurtment from "./Images/Recurtment.png";
 import medical from "./Images/doctor_15863653 1.png";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 import LatestUpdatesandBlogs from "./LatestUpdatesandBlogs.jsx";
 
 import Navbar from "./Navbar.jsx";
@@ -59,10 +61,11 @@ const coreBusinessData = [
     id:2,
     title: "AI in Real Estate",
     description: [
-      "A property price prediction model estimates property values based on various factors like location, features, market trends, and images. It combines structured data, textual descriptions, and visual data to predict prices more accurately", `Username:test_user_1, password: Bluparrot123`
-      
+      "A property price prediction model estimates property values based on various factors like location, features, market trends, and images. It combines structured data, textual descriptions, and visual data to predict prices more accurately"
+      // , `Username:test_user_1, password: Bluparrot123`  
     ],
     BackgroundImage: Data_as,
+    cred: [{'UserName': 'test_user_1', 'Password': 'Bluparrot123'}],
     impact: "Empowering clients to enhance their marketing strategies and business decisions with data-driven insights.",
     path: "/Data_AI",
     icon: Data, // Replace with actual path,
@@ -93,6 +96,7 @@ const coreBusinessData = [
     path: "/Cloud_Services",
     icon: CloudeIcon,
     link: [{name: "Shiftz", url: "https://www.Shiftz.in"}, 
+      {name: "Recruiit", url: "https://www.Shiftz.in"}
       ]
   },
   {
@@ -122,24 +126,13 @@ const coreBusinessData = [
       ]
   },
   {
-    id:10,
-    title: "AI in Recruitment",
-    description: [
-      "AI-powered recruitment system that automates candidate-job matching using vector search (with rule-based scoring), semantic skill extraction, and multi-factor scoring to deliver highly relevant talent recommendations in real time.", "End-to-end platform integrating resume parsing, intelligent job description generation, and percentile-based candidate ranking, designed to streamline hiring workflows and optimize recruiter efficiency at scale."
-    ],
-    BackgroundImage: Cloude,
-    impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
-    path: "/Cloud_Services",
-    icon: CloudeIcon,
-    // link: [{name: "Recruiit", url: ""}, 
-    //   ]
-  },
-  {
     id:9,
-    title: "AI in Air Quality",
+    title: "AI in Air Quality Management",
     description: [
-      "Data Pipeline and SQL Integration: The air quality data, along with pollutant levels, is extracted from Excel files and automatically pushed into a SQL database through an ETL pipeline. This ensures the data is cleaned, structured, and stored efficiently for querying and analysis.", "UserName: admin@uae.gov, password: Admin@123"
+      "Data Pipeline and SQL Integration: The air quality data, along with pollutant levels, is extracted from Excel files and automatically pushed into a SQL database through an ETL pipeline. This ensures the data is cleaned, structured, and stored efficiently for querying and analysis.",
+      //  "UserName: admin@uae.gov, password: Admin@123"
     ],
+    cred: [{'UserName': 'admin@uae.gov', 'password': 'Admin@123'}],
     BackgroundImage: Cloude,
     impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
     path: "/Cloud_Services",
@@ -148,10 +141,10 @@ const coreBusinessData = [
       ]
   },
   {
-    id:9,
-    title: "Kareers",
+    id:12,
+    title: "AI in Education",
     description: [
-      "IInternship and Scholarship Applications:Kareer offers a centralized platform for students to find and apply for internships and scholarships. Smart filters and personalized recommendations help match opportunities to their skills and goals.", "Mentorship and Guidance: Students can connect with industry professionals for one-on-one mentorship. This provides career advice, networking support, and insights to make better career decisions."
+      "Internship and Scholarship Applications:Kareer offers a centralized platform for students to find and apply for internships and scholarships. Smart filters and personalized recommendations help match opportunities to their skills and goals.", "Mentorship and Guidance: Students can connect with industry professionals for one-on-one mentorship. This provides career advice, networking support, and insights to make better career decisions."
     ],
     BackgroundImage: Cloude,
     impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
@@ -160,6 +153,45 @@ const coreBusinessData = [
     // link: [{name: "Dashboard", url: "http://172.178.60.98:8030/"}, 
     //   ]
   },
+  {
+    id:13,
+    title: "Bhagwat Gita",
+    description: [
+      "A user calls feeling overwhelmed by work pressure and indecision; Aishwarya listens empathetically and shares a Gita shloka about letting go of attachment to outcomes, helping the user feel understood and calm.", "A user expresses sadness over a personal loss; Aishwarya validates their emotions and offers a relevant Gita shloka on acceptance, fostering a sense of comfort and connection."
+    ],
+    BackgroundImage: Cloude,
+    impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
+    path: "/Cloud_Services",
+    icon: CloudeIcon,
+    link: [{name: "+19033453472", url: ""}, 
+      ]
+  },
+  {
+    id:13,
+    title: "Samrat Motors Agent:",
+    description: [
+      "A user inquires about the Yamaha R15; Ayushi clarifies the model version, enthusiastically explains its features, and books a test ride at Samrat Superbikes for a confirmed date.", "A user expresses interest in an FZ bike but can’t visit soon; Ayushi provides detailed model information and sends product details via WhatsApp, ensuring the user stays engaged."
+    ],
+    BackgroundImage: Cloude,
+    impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
+    path: "/Cloud_Services",
+    icon: CloudeIcon,
+    link: [{name: "+17373246081", url: ""}, 
+      ]
+  },
+  // {
+  //   id:14,
+  //   title: "AI in Education",
+  //   description: [
+  //     "Internship and Scholarship Applications:Kareer offers a centralized platform for students to find and apply for internships and scholarships. Smart filters and personalized recommendations help match opportunities to their skills and goals.", "Mentorship and Guidance: Students can connect with industry professionals for one-on-one mentorship. This provides career advice, networking support, and insights to make better career decisions."
+  //   ],
+  //   BackgroundImage: Cloude,
+  //   impact: "Achieve enhanced scalability, reduced operational costs, and improved cloud performance, while ensuring security and business continuity across all major cloud platforms.",
+  //   path: "/Cloud_Services",
+  //   icon: CloudeIcon,
+  //   // link: [{name: "Dashboard", url: "http://172.178.60.98:8030/"}, 
+  //   //   ]
+  // },
  
 ];
 const statsData = [
@@ -358,11 +390,11 @@ const Navbar2 = () => {
 
         {/* Hero Section */}
         <section className="hero-section">
-          <h1 >
+          <h1>
              <span className="highlight">Blu</span><span style={{ color: '#FBC726' }}> Parrot</span> AI Sandbox
           </h1>
           
-          <p >We specialize in Data Science, Artificial Intelligence, Digital Transformation, ESG Innovations, IoT Automation, AI-Driven Performance Marketing, and Philanthropy Sector AI Solutions. </p>
+          <p>Sandbox provides a platform to showcase all the AI based development done by Bluparrot </p>
         </section>
       </div>
 
@@ -382,13 +414,23 @@ const Navbar2 = () => {
                     {item}
                   </li>)}
                 </ul>
-                 </div>
-            </div>
+              </div>
+
+              {business?.cred && <div className="credentails" >        
+                  {business?.cred?.map((item, ind)=> (
+                    <div key={ind} >
+                      <p>UserName: {item.UserName}</p> 
+                      <p>Password: {item.password}</p>
+                    </div>
+                  ))}
+              </div>}
+                
+            </div> 
             <div className="business-card-links" > 
                <p className="demo-link" >Demo Link</p>
                <div className="links" >
-                
-                {business?.link?.map((item, ind)=> <div className="live-link" key={ind} ><p>{item.name}</p>  <a href={item?.url} target="_blank" >Link</a> </div> )}
+                {business?.link?.map((item, ind)=> <div className="live-link" key={ind} ><p>{item.name}</p>  <a href={item?.url} className="arrow" target="_blank" > <FaArrowRightLong />
+ </a> </div> )}
                </div>
             </div>
          </div>
